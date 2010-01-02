@@ -157,7 +157,7 @@ def main():
                     # real file
                     name, ext = os.path.splitext(fileinput.filename())
                     logging.debug('Processing %s%s', name, ext)
-                    postdata[file_name] = name
+                    postdata[file_name] = name + ext
                     postdata[file_contents] = ''
                     if override_ext:
                         postdata[file_ext] = override_ext
